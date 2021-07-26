@@ -1,0 +1,24 @@
+Spring Boot + Spring Data JPA + H2 +JUnit4
+
+DB:H2 
+
+創建表格
+DROP TABLE VENDOR;
+
+CREATE TABLE VENDOR(
+ID VARCHAR(15) NOT NULL,
+NAME VARCHAR(128) NOT NULL,
+ADDR VARCHAR(256) NOT NULL,
+TEL VARCHAR(11) NOT NULL,
+PRIMARY KEY (ID )
+);
+                                                
+INSERT INTO VENDOR VALUES ('1', 'Ramesh',  'Ahmedabad', '0967456789'); 
+INSERT INTO VENDOR VALUES ('2', 'Tom',  'USA', '0945123456');
+INSERT INTO VENDOR VALUES ('3', 'Marry',  'EU', '09489456123');
+INSERT INTO VENDOR VALUES ('4', 'Talon',  'CH', '0967905789');
+INSERT INTO VENDOR VALUES ('5', 'Aaron',  'CH', '0978654789');
+                                                
+SELECT * FROM VENDOR 
+
+
